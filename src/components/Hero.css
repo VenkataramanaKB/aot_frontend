@@ -1,0 +1,195 @@
+/* 
+.back{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+.bg-gif{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+    
+}
+
+.back::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+}
+.hero .content{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left: 50%;
+    text-align: center;
+    
+}
+.title{
+    font-size: 60px;
+}
+
+.load-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
+} */
+/* .back {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.bg-gif {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.back::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.hero .content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.loading.hidden {
+    opacity: 0;
+    transform: scale(1.2);
+    pointer-events: none;
+}
+
+.load-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.loading.hidden .load-img {
+    opacity: 0;
+    transform: scale(1.2);
+} */
+
+.back {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.bg-gif {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.back::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.hero .content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.title {
+    font-size: 60px;
+}
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.load-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    
+}
+
+.loading.hidden {
+    opacity: 0;
+    transform: scale(1.2);
+    pointer-events: none;
+}
+
+.loading.hidden .load-img {
+    opacity: 0;
+    transform: scale(1.2);
+}

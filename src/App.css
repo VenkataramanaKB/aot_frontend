@@ -1,0 +1,19 @@
+body {
+    margin: 0; /* Removes default margin */
+    height: 100vh;
+    overflow: scroll;
+    background-color: white; /* Ensures the body takes up the full viewport height */
+}
+::-webkit-scrollbar{
+  display: none;
+}
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale:1;
+  }
+}

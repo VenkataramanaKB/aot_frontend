@@ -1,0 +1,25 @@
+.footer{
+    position: relative;
+    /* margin-top: 50px; */
+    text-align: center;
+    /* margin-bottom: 50px; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 6rem 0;    
+}
+
+.copyright {
+    display: flex;
+    align-items: center; 
+    justify-content: center; /* Center horizontally */
+    position: absolute; 
+    /* bottom: 20px; */
+    left: 50%;
+    transform: translateX(-50%); 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+body{
+    background-color: #1A1A1A;
+}
