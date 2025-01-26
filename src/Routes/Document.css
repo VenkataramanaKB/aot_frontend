@@ -3,7 +3,7 @@
     padding-top: 100px;
     padding-bottom: 50px;
 }
-/* From Uiverse.io by SouravBandyopadhyay */
+
 .x,
 .y,.z,.l{
     padding-bottom: 20px;
@@ -14,7 +14,8 @@
     isolation: isolate;
     position: relative;
     width: 75vw;
-    height: 18vh;
+    min-height: 18vh;
+    height: auto;
     background: #29292c;
     border-radius: 1rem;
     overflow: hidden;
@@ -26,6 +27,7 @@
     padding-bottom: 5px;
     --gradient: linear-gradient(to bottom, #ff6b6b, #ff9671, #ffd36e);
     --color: white
+    
     
   }
   
@@ -71,6 +73,9 @@
     padding: 0 1.25rem;
     transition: transform 300ms ease;
     z-index: 5;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   
   .notification:hover .notibody {
@@ -124,20 +129,21 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     max-width: 100%;
-    overflow-x: auto; /* Ensures long links are scrollable */
+    overflow-x: auto; 
+    font-size: small;
   }
   
   #api-link {
-    color: #32a6ff; /* Hyperlink color matching your theme */
+    color: #32a6ff; 
     text-decoration: none;
     font-family: 'Amatic SC', cursive;
     font-size: 20px;
-    white-space: nowrap; /* Prevents the link from breaking onto multiple lines */
+   
   }
   
   #api-link:hover {
     text-decoration: underline;
-    color: #7e61ff; /* Slightly brighter color on hover */
+    color: #7e61ff;
   }
   
   .copy-button {

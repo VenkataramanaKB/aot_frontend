@@ -2,3 +2,21 @@
     text-align: center;
     padding-top: 100px;
 }
+/* .notification{
+    width: 50vw;
+    height: 40vh;
+}
+.notibody{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+
+} */
+ .textdemo{
+    text-align: justify;
+    text-justify: inter-word;
+    
+ }
+/* .newx{
+    max-width: 50vw;
+} */

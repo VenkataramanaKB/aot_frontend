@@ -2,3 +2,38 @@
     text-align: center;
     padding-top: 100px;
 }
+
+
+/* Randomize button */
+.newname{
+  text-align: end;
+}
+.randomize-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding-bottom: 10px;
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.randomize-btn:hover {
+  background-color: #45a049;
+}
+
+/* Box text */
+.box p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+.x{
+    padding-top: 25px;
+}

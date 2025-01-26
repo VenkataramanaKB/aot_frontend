@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Document = () => {
+const Document = ({ showNavbarFooter = true }) => {
   const navbarRef = useRef(null);
   const titleRef = useRef(null);
   const footerRef = useRef(null);
@@ -17,7 +17,7 @@ const Document = () => {
   const lRef = useRef(null);
 
   useEffect(() => {
-    // Navbar Animation
+
     gsap.fromTo(
       navbarRef.current,
       { opacity: 0, y: -50 },
@@ -28,8 +28,6 @@ const Document = () => {
         ease: "power2.out",
       }
     );
-
-    // Title Animation
     gsap.fromTo(
       titleRef.current,
       { opacity: 0, y: 50 },
@@ -46,7 +44,6 @@ const Document = () => {
       }
     );
 
-    // Footer Animation (Updated)
     gsap.fromTo(
       footerRef.current,
       { opacity: 0, y: 50 },
@@ -57,13 +54,13 @@ const Document = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: footerRef.current,
-          start: "top bottom", // Trigger when footer enters view
+          start: "top bottom",
           toggleActions: "play none none none",
         },
       }
     );
 
-    // Animation for classes x, y, z, l
+
     gsap.fromTo(
       [xRef.current, yRef.current, zRef.current, lRef.current],
       { opacity: 0, y: 50 },
@@ -72,10 +69,10 @@ const Document = () => {
         y: 0,
         duration: 1,
         ease: "power2.out",
-        stagger: 0.2, // Stagger animations for each element
+        stagger: 0.2, 
         scrollTrigger: {
           trigger: [xRef.current, yRef.current, zRef.current, lRef.current],
-          start: "top bottom", // Start animation when the element enters the view
+          start: "top bottom", 
           toggleActions: "play none none none",
         },
       }
@@ -84,10 +81,8 @@ const Document = () => {
 
   return (
     <div>
-      {/* Navbar */}
-      <Navbar ref={navbarRef} />
+      {showNavbarFooter && <Navbar ref={navbarRef} />}
 
-      {/* Content */}
       <div>
         <div className="docu-title" ref={titleRef}>
           <h2>Documentation</h2>
@@ -137,7 +132,7 @@ const Document = () => {
         </div>
       </div>
 
-      <Footer ref={footerRef} />
+      {showNavbarFooter && <Footer ref={footerRef} />}
     </div>
   );
 };
