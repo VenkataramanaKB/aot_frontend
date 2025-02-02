@@ -21,7 +21,7 @@ const Footer = React.forwardRef((props, ref) => {
           </a>
         </div>
         <div className="copyright">
-          <p>© {currentYear} AOT Quotes API. All Rights Reserved.</p>
+          <p>© {currentYear} AOT Quotes API.</p>
         </div>
       </div>
     </div>

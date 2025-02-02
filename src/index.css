@@ -11,16 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Press+Start+2P&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 *{
   box-sizing: border-box;
   /* font-family: "Quicksand", serif; */
   /* font-family: "Playwrite IN", serif; */
-  font-family: "Kalam", serif;
+  /* font-family: "Kalam", serif; */
+  font-family: "Orbitron", serif;
   font-optical-sizing: auto;
   color: #F5F5F5;
   /* color: #1E1E1E; */
@@ -30,7 +32,8 @@ code {
   font-style: normal;
 }
 body{
-  background-color: #1A1A1A;
+  /* background-color: #1A1A1A; */
+  background: (0deg 0% 75%);
   /* background-color: #FF6F61 !important; */
 }
 a{

@@ -93,7 +93,7 @@ const About = ({ showNavbarFooter = true }) => {
           >
             <div className="notiglow"></div>
             <div className="notiborderglow"></div>
-            <div className="notibody textdemo">
+            <div className="notibody1">
               Welcome to the Attack on Titan Quotes API, your go-to source for
               quotes from one of the most iconic anime series out there! If you're
               a fan of Eren, Mikasa, Levi, and the rest of the Survey Corps, then
@@ -115,12 +115,12 @@ const About = ({ showNavbarFooter = true }) => {
           >
             <div className="notiglow"></div>
             <div className="notiborderglow"></div>
-            <div className="notibody textdemo">
+            <div className="notibody1">
               Hey, I'm Venkataramana, an engineering student diving into the world
               of coding and software development. I'm passionate about building fun
               and useful projects—like this one—and constantly exploring new tech
               stacks. When I'm not buried in code, you’ll probably find me enjoying
-              the latest anime series, gaming, or working on something creative. If
+              the latest anime series or working on something creative. If
               you’re a fellow anime fan or just someone who appreciates good quotes,
               I hope you find this API fun and useful!
             </div>

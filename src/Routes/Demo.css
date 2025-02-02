@@ -8,32 +8,76 @@
 .newname{
   text-align: end;
 }
-.randomize-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding-bottom: 10px;
-  padding: 8px 12px;
-  background-color: #4caf50;
-  color: #fff;
+
+.bgblue {
+  
+   /* background: linear-gradient(135deg, rgba(51, 51, 51, 0.5), rgba(102, 102, 102, 0.5)); */
+     background-color: #29292c;
+
+
+      padding: 1px;
+      border-radius: 1.2rem;
+      box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+      max-width: 75vw;
+      width: auto;
+      overflow: scroll;
+      margin-left: auto;
+      margin-right: auto;
+      overflow-y: scroll;
+  
+}
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
+
+.card {
+  font-size: 1rem;
+  /* color: #bec4cf; */
+  /* background: linear-gradient(135deg, #fffffff5, #3a4b8a, #ffffff98); */
+  /* background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
+   */
+   /* background: linear-gradient(135deg, #0d1120, #f44336, #ffeb3b);
+    */
+    /* background: linear-gradient(135deg, #333333, #666666);
+     */
+     /* background: linear-gradient(135deg, rgba(51, 51, 51, 0.5), rgba(102, 102, 102, 0.5)); */
+     background-color: #29292c;
+
+
+
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  width: auto;
+  /* padding-top: 50px; */
+}
+.wrap{
+  padding-top: 50px;
+}
+button {
+  font-family: inherit;
   border: none;
-  border-radius: 5px;
-  font-size: 12px;
+  outline: 1px dotted rgb(37, 37, 37);
+  outline-offset: -4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  background: hsl(0deg 0% 75%);
+  box-shadow:
+    inset -1px -1px #292929,
+    inset 1px 1px #fff,
+    inset -2px -2px rgb(158, 158, 158),
+    inset 2px 2px #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 30px;
 }
 
-.randomize-btn:hover {
-  background-color: #45a049;
+button:active {
+  box-shadow:
+    inset -1px -1px #fff,
+    inset 1px 1px #292929,
+    inset -2px -2px #ffffff,
+    inset 2px 2px rgb(158, 158, 158);
 }
-
-/* Box text */
-.box p {
-  margin: 0;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.5;
-}
-.x{
-    padding-top: 25px;
+.random{
+  text-align: right;
 }

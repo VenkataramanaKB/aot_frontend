@@ -213,7 +213,7 @@ const Demo = ({ showNavbarFooter = true }) => {
       setApiData(JSON.stringify(data, null, 2));
     } catch (error) {
       setApiData('Error fetching data!');
-      console.error(error);
+      // console.error(error);
     }
 
     // Animate the box on data fetch
@@ -237,18 +237,16 @@ const Demo = ({ showNavbarFooter = true }) => {
         <div className="demo-title" ref={titleRef}>
           <h2>Demo</h2>
         </div>
+        <div className='wrap' ref={demoRef}> 
+          <div className="bgblue">
+            <div className="card">
+              <div className='random'>
+                <button onClick={fetchRandomData}>Randomize</button>
 
-        <div className="x">
-          <div className="notification" ref={demoRef}>
-            <div className="notiglow"></div>
-            <div className="notiborderglow"></div>
-            <div className="notititle newname">
-              <button className="randomize-btn" onClick={fetchRandomData}>
-                Randomize
-              </button>
-            </div>
-            <div className="notibody">
-              <pre>{apiData}</pre>
+              </div>
+              <div className='cont'>
+                <pre>{apiData}</pre>
+              </div>
             </div>
           </div>
         </div>
