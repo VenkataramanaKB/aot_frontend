@@ -4,6 +4,7 @@ import Home from './Routes/Home';
 import Demo from './Routes/Demo';
 import Document from './Routes/Document';
 import About from './Routes/About';
+import { Analytics } from "@vercel/analytics/react"
 
 import{ Route, Routes} from "react-router-dom"
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/documentation" element={<Document />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Analytics/>
     </>
   );
 }
